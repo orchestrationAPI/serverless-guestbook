@@ -62,11 +62,17 @@
     {{#each entries}}
     <div class="box">
       <article class="media">
+       <div class="content">
+            <p>
+              <strong>{{name}}</strong> <small>{{email}}</small>
+              <br> {{comment}}
+            </p>
+          </div>
        <!-- <div class="media-left">
           <figure class="image is-64x64">
             <img src="{{icon}}" alt="No Image">
           </figure>
-        </div> -->
+        </div> 
         <div class="media-content">
           <div class="content">
             <p>
@@ -74,7 +80,7 @@
               <br> {{comment}}
             </p>
           </div>
-        </div>
+        </div> -->
       </article>
     </div>
     {{/each}}
