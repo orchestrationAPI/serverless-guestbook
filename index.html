@@ -59,14 +59,8 @@
   </section>
 
   <script id="entries-template" type="text/x-handlebars-template">
-    {{#each entries}}
-    <div class="content">
-            <p>
-              <strong>{{name}}</strong> <small>{{email}}</small>
-              <br> {{comment}}
-            </p>
-          </div>
-   <!-- <div class="box">
+    {{#each entries.doc}}
+    <div class="box">
      
       <article class="media">
        
@@ -84,7 +78,7 @@
           </div>
         </div> 
       </article> 
-    </div> -->
+    </div> 
     {{/each}}
   </script>
 
