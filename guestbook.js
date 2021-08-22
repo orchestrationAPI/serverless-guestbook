@@ -39,18 +39,18 @@ const guestbook = {
   // retrieve entries and update the UI
   function loadEntries() {
     console.log('Loading entries...');
-    $('#rows').html('Loading entries...');
+    $('#doc').html('Loading entries...');
     guestbook.get().done(function(result) {
       if (!result.rows) {
         return;
       }
 
       const context = {
-        rows: result.rows
+        doc: result.rows
       }
-      $('#rows').html(entriesTemplate(context));
+      $('#doc').html(entriesTemplate(context));
     }).error(function(error) {
-      $('#rows').html('No entries');
+      $('#doc').html('No entries');
       console.log(error);
     });
   }
